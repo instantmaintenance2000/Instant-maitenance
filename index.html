@@ -6,7 +6,7 @@
 
   <title>Instant Maintenance | Construction & Maintenance</title>
 
-  <meta name="description" content="Instant Maintenance provides professional building construction, carpentry, plumbing, painting, steel work and earthworks services in Winterveldt, South Africa.">
+  <meta name="description" content="Instant Maintenance provides professional building construction, carpentry, plumbing, painting, steel work and earthworks services in South Africa.">
 
   <style>
     :root {
@@ -41,8 +41,6 @@
       color: inherit;
     }
 
-    /* NAVIGATION */
-
     header {
       position: sticky;
       top: 0;
@@ -56,7 +54,6 @@
       margin: auto;
       min-height: 75px;
       padding: 12px 25px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -73,14 +70,11 @@
     .logo-icon {
       width: 48px;
       height: 48px;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       border: 2px solid var(--gold);
       color: var(--gold);
-
       font-size: 19px;
       font-weight: 900;
     }
@@ -143,25 +137,16 @@
 
     .hero {
       min-height: 85vh;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       text-align: center;
-
       padding: 100px 25px;
 
       background:
-        linear-gradient(
-          rgba(0,0,0,0.65),
-          rgba(0,0,0,0.85)
-        ),
-        radial-gradient(
-          circle at center,
-          #3b3b3b,
-          #111 65%
-        );
+        linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.78)),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
     }
 
     .hero-content {
@@ -170,14 +155,10 @@
 
     .badge {
       display: inline-block;
-
       padding: 7px 16px;
-
       border: 1px solid #777;
       border-radius: 30px;
-
       color: var(--gold);
-
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -196,21 +177,17 @@
     .hero p {
       max-width: 720px;
       margin: auto;
-
-      color: var(--grey);
+      color: #eeeeee;
       font-size: 19px;
     }
 
     .hero-buttons {
       margin-top: 35px;
-
       display: flex;
       justify-content: center;
       gap: 14px;
       flex-wrap: wrap;
     }
-
-    /* SECTIONS */
 
     section {
       padding: 90px 25px;
@@ -251,9 +228,7 @@
       background: var(--dark);
       border: 1px solid var(--border);
       border-radius: 10px;
-
-      padding: 30px;
-
+      overflow: hidden;
       transition: 0.3s;
     }
 
@@ -262,9 +237,20 @@
       border-color: var(--gold);
     }
 
+    .service-image {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-content {
+      padding: 25px 30px 30px;
+    }
+
     .service-icon {
-      font-size: 35px;
-      margin-bottom: 15px;
+      font-size: 30px;
+      margin-bottom: 8px;
     }
 
     .service-card h3 {
@@ -300,6 +286,26 @@
       margin-bottom: 18px;
     }
 
+    .founder {
+      margin: 20px 0 25px;
+      padding: 15px 20px;
+      border-left: 3px solid var(--gold);
+      background: #1b1b1b;
+    }
+
+    .founder strong {
+      color: var(--gold);
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .founder span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
     .about-points {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -322,7 +328,7 @@
       font-size: 14px;
     }
 
-    /* WHY US */
+    /* WHY */
 
     .why {
       background: var(--black);
@@ -337,9 +343,7 @@
     .why-card {
       background: var(--dark);
       padding: 30px 20px;
-
       text-align: center;
-
       border: 1px solid var(--border);
       border-radius: 8px;
     }
@@ -364,23 +368,15 @@
 
     .contact {
       background:
-        linear-gradient(
-          135deg,
-          #242424,
-          #0d0d0d
-        );
+        linear-gradient(135deg, #242424, #0d0d0d);
     }
 
     .contact-box {
       display: grid;
       grid-template-columns: 1fr 1fr;
-
       gap: 50px;
-
       padding: 45px;
-
       background: #161616;
-
       border: 1px solid var(--border);
       border-radius: 12px;
     }
@@ -410,15 +406,10 @@
       margin-bottom: 25px;
     }
 
-    /* FOOTER */
-
     footer {
       padding: 30px 20px;
-
       text-align: center;
-
       border-top: 1px solid var(--border);
-
       color: #999;
       font-size: 14px;
     }
@@ -498,33 +489,28 @@
       .section-title h2 {
         font-size: 34px;
       }
+
+      .service-image {
+        height: 210px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-
 <header>
   <div class="navbar">
 
     <a href="#home" class="logo">
-
-      <div class="logo-icon">
-        IM
-      </div>
+      <div class="logo-icon">IM</div>
 
       <div>
-        <div class="logo-name">
-          INSTANT MAINTENANCE
-        </div>
-
+        <div class="logo-name">INSTANT MAINTENANCE</div>
         <span class="logo-tagline">
           QUALITY • RELIABILITY • SERVICE
         </span>
       </div>
-
     </a>
 
     <nav>
@@ -612,96 +598,132 @@
 
       <div class="service-card">
 
-        <div class="service-icon">🏗️</div>
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80"
+          alt="Building construction"
+        >
 
-        <h3>
-          Building Construction
-        </h3>
+        <div class="service-content">
+          <div class="service-icon">🏗️</div>
 
-        <p>
-          New construction, renovations and general building
-          work tailored to your project requirements.
-        </p>
+          <h3>Building Construction</h3>
 
-      </div>
-
-
-      <div class="service-card">
-
-        <div class="service-icon">🪚</div>
-
-        <h3>
-          Carpentry
-        </h3>
-
-        <p>
-          Repairs, installations, doors, ceilings, cupboards,
-          roofing work and custom woodwork.
-        </p>
+          <p>
+            New construction, renovations and general building
+            work tailored to your project requirements.
+          </p>
+        </div>
 
       </div>
 
 
       <div class="service-card">
 
-        <div class="service-icon">🔧</div>
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1000&q=80"
+          alt="Carpentry work"
+        >
 
-        <h3>
-          Plumbing
-        </h3>
+        <div class="service-content">
+          <div class="service-icon">🪚</div>
 
-        <p>
-          Plumbing installations, repairs, maintenance,
-          leaks, pipes, fittings and drainage solutions.
-        </p>
+          <h3>Carpentry</h3>
 
-      </div>
-
-
-      <div class="service-card">
-
-        <div class="service-icon">🎨</div>
-
-        <h3>
-          Painting
-        </h3>
-
-        <p>
-          Interior and exterior painting, surface preparation,
-          repairs and professional finishing.
-        </p>
+          <p>
+            Repairs, installations, doors, ceilings, cupboards,
+            roofing work and custom woodwork.
+          </p>
+        </div>
 
       </div>
 
 
       <div class="service-card">
 
-        <div class="service-icon">⚙️</div>
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1000&q=80"
+          alt="Plumbing work"
+        >
 
-        <h3>
-          Steel Work
-        </h3>
+        <div class="service-content">
+          <div class="service-icon">🔧</div>
 
-        <p>
-          Gates, burglar bars, frames, structures and
-          customised steel fabrication and installation.
-        </p>
+          <h3>Plumbing</h3>
+
+          <p>
+            Plumbing installations, repairs, maintenance,
+            leaks, pipes, fittings and drainage solutions.
+          </p>
+        </div>
 
       </div>
 
 
       <div class="service-card">
 
-        <div class="service-icon">🚜</div>
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=80"
+          alt="Professional painting work"
+        >
 
-        <h3>
-          Earthworks
-        </h3>
+        <div class="service-content">
+          <div class="service-icon">🎨</div>
 
-        <p>
-          Excavation, clearing, levelling, trenching,
-          site preparation and groundwork.
-        </p>
+          <h3>Painting</h3>
+
+          <p>
+            Interior and exterior painting, surface preparation,
+            repairs and professional finishing.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80"
+          alt="Steel and metal work"
+        >
+
+        <div class="service-content">
+          <div class="service-icon">⚙️</div>
+
+          <h3>Steel Work</h3>
+
+          <p>
+            Gates, burglar bars, frames, structures and
+            customised steel fabrication and installation.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1590644365607-1c5a1c7d8f3f?auto=format&fit=crop&w=1000&q=80"
+          alt="Earthworks and site preparation"
+        >
+
+        <div class="service-content">
+          <div class="service-icon">🚜</div>
+
+          <h3>Earthworks</h3>
+
+          <p>
+            Excavation, clearing, levelling, trenching,
+            site preparation and groundwork.
+          </p>
+        </div>
 
       </div>
 
@@ -715,8 +737,7 @@
 <!-- ABOUT -->
 
 <section class="about" id="about">
-Director & Founder
-  Max Manxiwa 
+
   <div class="container">
 
     <div class="about-grid">
@@ -733,6 +754,11 @@ Director & Founder
             Driven by Service.
           </span>
         </h2>
+
+        <div class="founder">
+          <strong>Director & Founder</strong>
+          <span>Max Manxiwa</span>
+        </div>
 
         <p>
           Instant Maintenance is a professional construction
@@ -756,57 +782,34 @@ Director & Founder
       <div class="about-points">
 
         <div class="about-point">
-
-          <strong>
-            Our Mission
-          </strong>
-
+          <strong>Our Mission</strong>
           <span>
             To provide reliable, quality construction and
             maintenance services.
           </span>
-
         </div>
 
-
         <div class="about-point">
-
-          <strong>
-            Our Vision
-          </strong>
-
+          <strong>Our Vision</strong>
           <span>
             To become a trusted name through professionalism
             and dependable service.
           </span>
-
         </div>
 
-
         <div class="about-point">
-
-          <strong>
-            Customer Focus
-          </strong>
-
+          <strong>Customer Focus</strong>
           <span>
             Practical solutions built around our customers'
             requirements.
           </span>
-
         </div>
 
-
         <div class="about-point">
-
-          <strong>
-            Durable Results
-          </strong>
-
+          <strong>Durable Results</strong>
           <span>
             Quality workmanship designed to provide lasting value.
           </span>
-
         </div>
 
       </div>
@@ -847,10 +850,7 @@ Director & Founder
     <div class="why-grid">
 
       <div class="why-card">
-
-        <div class="why-number">
-          01
-        </div>
+        <div class="why-number">01</div>
 
         <h3>
           Quality Workmanship
@@ -859,15 +859,11 @@ Director & Founder
         <p>
           Attention to detail and a strong focus on professional results.
         </p>
-
       </div>
 
 
       <div class="why-card">
-
-        <div class="why-number">
-          02
-        </div>
+        <div class="why-number">02</div>
 
         <h3>
           Reliable Service
@@ -876,15 +872,11 @@ Director & Founder
         <p>
           Efficient project delivery and clear communication.
         </p>
-
       </div>
 
 
       <div class="why-card">
-
-        <div class="why-number">
-          03
-        </div>
+        <div class="why-number">03</div>
 
         <h3>
           Multiple Services
@@ -893,15 +885,11 @@ Director & Founder
         <p>
           Six core service areas under one professional business.
         </p>
-
       </div>
 
 
       <div class="why-card">
-
-        <div class="why-number">
-          04
-        </div>
+        <div class="why-number">04</div>
 
         <h3>
           Customer Focus
@@ -910,7 +898,6 @@ Director & Founder
         <p>
           Practical solutions designed around your project requirements.
         </p>
-
       </div>
 
     </div>
@@ -954,12 +941,9 @@ Director & Founder
           Contact Details
         </h3>
 
-
         <div class="contact-item">
 
-          <strong>
-            Phone
-          </strong>
+          <strong>Phone</strong>
 
           <a href="tel:0836745343">
             083 674 5343
@@ -970,9 +954,7 @@ Director & Founder
 
         <div class="contact-item">
 
-          <strong>
-            Email
-          </strong>
+          <strong>Email</strong>
 
           <a href="mailto:maxi.instantmaitenance@gmail.com">
             maxi.instantmaitenance@gmail.com
@@ -983,14 +965,12 @@ Director & Founder
 
         <div class="contact-item">
 
-          <strong>
-            Address
-          </strong>
+          <strong>Address</strong>
 
           10 Peer street<br>
           Boort<br>
-          Swellendam <br>
-          South Africa
+          Swellendam<br>
+          South Africa<br>
           6740
 
         </div>
