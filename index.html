@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Instant Maintenance | Building, Plumbing, Carpentry & More</title>
-
-  <meta name="description" content="Instant Maintenance provides professional building, carpentry, plumbing, painting, steel work and earthworks services in Winterveldt and surrounding areas.">
+  <title>Instant Maintenance | Quality Work. Reliable Service.</title>
 
   <style>
     * {
@@ -18,30 +16,27 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
+      background: #000;
+      color: #fff;
       line-height: 1.6;
-      color: #222;
-      background: #f5f5f5;
     }
 
     header {
       background: #000;
-      color: #fff;
       padding: 20px;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      border-bottom: 2px solid #d4af37;
     }
 
     header h1 {
-      font-size: 30px;
-      letter-spacing: 1px;
+      color: #d4af37;
+      font-size: 32px;
+      letter-spacing: 2px;
     }
 
     header p {
-      color: #d4af37;
+      color: #fff;
       font-weight: bold;
-      margin-top: 5px;
     }
 
     nav {
@@ -49,10 +44,9 @@
     }
 
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
       margin: 0 8px;
-      font-size: 14px;
       font-weight: bold;
     }
 
@@ -61,28 +55,32 @@
     }
 
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-                  linear-gradient(135deg, #333, #111);
-      color: white;
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 100px 20px;
+      padding: 50px 20px;
+      background: linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.78));
     }
 
     .hero h2 {
+      color: #d4af37;
       font-size: 42px;
-      margin-bottom: 15px;
+      max-width: 850px;
+      margin-bottom: 20px;
     }
 
     .hero p {
       font-size: 20px;
-      max-width: 700px;
-      margin: auto;
+      max-width: 750px;
     }
 
     .button {
       display: inline-block;
       margin-top: 25px;
-      padding: 13px 25px;
+      padding: 13px 28px;
       background: #d4af37;
       color: #000;
       text-decoration: none;
@@ -102,9 +100,9 @@
 
     section h2 {
       text-align: center;
-      margin-bottom: 35px;
+      color: #d4af37;
       font-size: 32px;
-      color: #111;
+      margin-bottom: 30px;
     }
 
     .about {
@@ -120,37 +118,31 @@
     }
 
     .service {
-      background: white;
+      background: #111;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
       padding: 30px 20px;
       text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      border-top: 4px solid #d4af37;
-    }
-
-    .service h3 {
-      margin-bottom: 10px;
-      color: #111;
     }
 
     .service-icon {
-      font-size: 40px;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .service h3 {
+      color: #d4af37;
       margin-bottom: 10px;
     }
 
     .why-us {
-      background: #111;
-      color: white;
       max-width: none;
+      background: #111;
       text-align: center;
     }
 
-    .why-us h2 {
-      color: white;
-    }
-
     .why-list {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -158,23 +150,27 @@
     }
 
     .why-item {
-      padding: 20px;
-      border: 1px solid #444;
+      border: 1px solid #d4af37;
+      padding: 25px;
       border-radius: 8px;
     }
 
     .why-item strong {
-      color: #d4af37;
       display: block;
-      margin-bottom: 8px;
+      color: #d4af37;
+      margin-bottom: 10px;
     }
 
-    /* GALLERY */
+    /* GALLERY AT THE END */
+    #gallery {
+      background: #000;
+    }
+
     .gallery-intro {
       text-align: center;
       max-width: 750px;
-      margin: -15px auto 35px;
-      color: #555;
+      margin: 0 auto 35px;
+      color: #ddd;
     }
 
     .gallery {
@@ -184,80 +180,62 @@
     }
 
     .gallery-item {
-      background: #111;
       min-height: 220px;
+      background: #111;
+      border: 2px solid #d4af37;
       border-radius: 8px;
-      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding: 20px;
-      border: 3px solid #d4af37;
     }
 
-    .gallery-item-content {
-      color: white;
-    }
-
-    .gallery-item-content .icon {
+    .gallery-item .icon {
       font-size: 50px;
       margin-bottom: 10px;
     }
 
-    .gallery-item-content h3 {
+    .gallery-item h3 {
       color: #d4af37;
       margin-bottom: 5px;
     }
 
-    .gallery-item-content p {
-      font-size: 14px;
+    .gallery-item p {
       color: #ddd;
     }
 
     .contact {
-      background: white;
-      text-align: center;
+      background: #111;
+      border: 1px solid #d4af37;
       border-radius: 8px;
+      text-align: center;
     }
 
     .contact p {
       margin: 10px 0;
-      font-size: 17px;
-    }
-
-    .contact strong {
-      color: #111;
     }
 
     .whatsapp {
-      background: #25D366;
-      color: white;
-      margin-left: 10px;
-    }
-
-    .whatsapp:hover {
-      background: #128C7E;
+      background: #d4af37;
+      color: #000;
     }
 
     footer {
       background: #000;
-      color: white;
+      border-top: 2px solid #d4af37;
       text-align: center;
-      padding: 25px 15px;
+      padding: 30px 15px;
     }
 
-    footer p {
-      margin: 5px;
-    }
-
-    .gold {
+    footer strong,
+    footer .gold {
       color: #d4af37;
     }
 
     @media (max-width: 600px) {
       .hero h2 {
-        font-size: 32px;
+        font-size: 31px;
       }
 
       .hero p {
@@ -267,10 +245,6 @@
       nav a {
         display: inline-block;
         margin: 5px;
-      }
-
-      section {
-        padding: 50px 15px;
       }
     }
   </style>
@@ -285,10 +259,10 @@
 
     <nav>
       <a href="#home">Home</a>
-      <a href="#about">About</a>
+      <a href="#about">About Us</a>
       <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
+      <a href="#gallery">Gallery</a>
     </nav>
   </header>
 
@@ -306,7 +280,7 @@
   </section>
 
 
-  <!-- ABOUT -->
+  <!-- ABOUT US -->
   <section id="about">
     <h2>About Us</h2>
 
@@ -314,12 +288,12 @@
       <p>
         Instant Maintenance is a professional maintenance and construction
         company based in Winterveldt. We provide reliable and quality
-        services for residential, commercial and other construction projects.
+        services for residential, commercial and construction projects.
       </p>
 
       <p style="margin-top:15px;">
-        Our team is committed to quality workmanship, dependable service
-        and completing every project with professionalism.
+        We are committed to quality workmanship, dependable service and
+        professional results on every project.
       </p>
     </div>
   </section>
@@ -334,37 +308,37 @@
       <div class="service">
         <div class="service-icon">🏗️</div>
         <h3>Building & Construction</h3>
-        <p>Professional building and construction solutions for your projects.</p>
+        <p>Professional building and construction solutions.</p>
       </div>
 
       <div class="service">
         <div class="service-icon">🔨</div>
         <h3>Carpentry</h3>
-        <p>Quality carpentry work and practical solutions for your property.</p>
+        <p>Quality carpentry work and practical solutions.</p>
       </div>
 
       <div class="service">
         <div class="service-icon">🚰</div>
         <h3>Plumbing</h3>
-        <p>Reliable plumbing installation, repairs and maintenance services.</p>
+        <p>Reliable plumbing installation, repairs and maintenance.</p>
       </div>
 
       <div class="service">
         <div class="service-icon">🎨</div>
         <h3>Painting</h3>
-        <p>Professional interior and exterior painting for a clean finish.</p>
+        <p>Professional interior and exterior painting services.</p>
       </div>
 
       <div class="service">
         <div class="service-icon">⚙️</div>
         <h3>Steel Work</h3>
-        <p>Strong and practical steel work solutions for various projects.</p>
+        <p>Strong and practical steel work solutions.</p>
       </div>
 
       <div class="service">
         <div class="service-icon">🚜</div>
         <h3>Earthworks</h3>
-        <p>Reliable earthworks and site preparation services.</p>
+        <p>Reliable earthworks and site preparation.</p>
       </div>
 
     </div>
@@ -379,85 +353,22 @@
 
       <div class="why-item">
         <strong>Quality Workmanship</strong>
-        We focus on delivering quality work and professional results.
+        Quality work and professional results.
       </div>
 
       <div class="why-item">
         <strong>Reliable Service</strong>
-        We are committed to dependable and efficient service.
+        Dependable and efficient service.
       </div>
 
       <div class="why-item">
         <strong>Professional Team</strong>
-        We approach every project with professionalism and care.
+        Professional approach to every project.
       </div>
 
       <div class="why-item">
         <strong>Customer Satisfaction</strong>
-        Your project and satisfaction are important to us.
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- GALLERY -->
-  <section id="gallery">
-    <h2>Our Gallery</h2>
-
-    <p class="gallery-intro">
-      Take a look at some of the work and services provided by
-      <strong>Instant Maintenance</strong>. More project photos can be added here.
-    </p>
-
-    <div class="gallery">
-
-      <div class="gallery-item">
-        <div class="gallery-item-content">
-          <div class="icon">🏗️</div>
-          <h3>Building & Construction</h3>
-          <p>Our construction projects</p>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-item-content">
-          <div class="icon">🔨</div>
-          <h3>Carpentry</h3>
-          <p>Quality carpentry work</p>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-item-content">
-          <div class="icon">🚰</div>
-          <h3>Plumbing</h3>
-          <p>Plumbing installations and repairs</p>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-item-content">
-          <div class="icon">🎨</div>
-          <h3>Painting</h3>
-          <p>Interior and exterior painting</p>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-item-content">
-          <div class="icon">⚙️</div>
-          <h3>Steel Work</h3>
-          <p>Steel work and fabrication</p>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <div class="gallery-item-content">
-          <div class="icon">🚜</div>
-          <h3>Earthworks</h3>
-          <p>Site preparation and earthworks</p>
-        </div>
+        Your project and satisfaction matter to us.
       </div>
 
     </div>
@@ -470,17 +381,11 @@
 
     <div class="contact">
 
-      <p>
-        <strong>Instant Maintenance</strong>
-      </p>
+      <p><strong>Instant Maintenance</strong></p>
 
-      <p>
-        📍 Plot 208 Nyatlo Stand, Winterveldt, 0198
-      </p>
+      <p>📍 Plot 208 Nyatlo Stand, Winterveldt, 0198</p>
 
-      <p>
-        📞 083 674 5343
-      </p>
+      <p>📞 083 674 5343</p>
 
       <a href="tel:0836745343" class="button">
         Call Us
@@ -494,19 +399,74 @@
   </section>
 
 
+  <!-- GALLERY - LAST SECTION BEFORE FOOTER -->
+  <section id="gallery">
+    <h2>Our Gallery</h2>
+
+    <p class="gallery-intro">
+      View some of the work and services provided by
+      <strong>Instant Maintenance</strong>.
+    </p>
+
+    <div class="gallery">
+
+      <div class="gallery-item">
+        <div>
+          <div class="icon">🏗️</div>
+          <h3>Building & Construction</h3>
+          <p>Construction projects</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div>
+          <div class="icon">🔨</div>
+          <h3>Carpentry</h3>
+          <p>Carpentry projects</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div>
+          <div class="icon">🚰</div>
+          <h3>Plumbing</h3>
+          <p>Plumbing projects</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div>
+          <div class="icon">🎨</div>
+          <h3>Painting</h3>
+          <p>Painting projects</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div>
+          <div class="icon">⚙️</div>
+          <h3>Steel Work</h3>
+          <p>Steel work projects</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div>
+          <div class="icon">🚜</div>
+          <h3>Earthworks</h3>
+          <p>Earthworks projects</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
   <!-- FOOTER -->
   <footer>
-    <p>
-      <strong>INSTANT MAINTENANCE</strong>
-    </p>
-
-    <p class="gold">
-      Quality Work. Reliable Service.
-    </p>
-
-    <p>
-      © 2026 Instant Maintenance. All Rights Reserved.
-    </p>
+    <p><strong>INSTANT MAINTENANCE</strong></p>
+    <p class="gold">Quality Work. Reliable Service.</p>
+    <p>© 2026 Instant Maintenance. All Rights Reserved.</p>
   </footer>
 
 </body>
